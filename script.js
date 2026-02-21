@@ -1,13 +1,53 @@
-// if condition
+// Ternary operator
 
-const mobilePrice = 26000;
-const budget = 24000;
-const canAdd = budget + 2000;
-// console.log(canAdd);
+const age = 24;
 
-if(mobilePrice <= budget || mobilePrice <= canAdd){
-    console.log("I can buy it");
-}
-else{
-    console.log("I can not buy it");
-}
+// if(age < 18){
+//     console.log('You can not vote')
+// }
+// else{
+//     console.log('You can vote');
+// }
+
+// In ternary operator
+
+age < 18 ? console.log('You can not vote') : console.log('You can vote');
+
+// another example
+
+let price = 1200;
+const isLeader = true;
+
+// if( isLeader === true ){
+//     price = 0;
+// }
+// else{
+//     price = price + 100;
+// }
+
+// console.log(price);
+
+// In ternary operator
+
+// price = isLeader === true ? 0 : price + 100; 
+
+// console.log(price);
+
+// semi-advance ternary
+
+// if(isLeader === true){
+//     if(price > 1000){
+//         price = price / 2;
+//     }
+//     else{
+//         price = 0;
+//     }
+// }
+// else{
+//     price = price + 1000;
+// }
+
+// In ternary
+price = isLeader === true ? price > 1000 ? price / 2 : 0 : price + 1000;
+
+console.log(price);
